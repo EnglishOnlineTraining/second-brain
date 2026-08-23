@@ -1,0 +1,18 @@
+;; Logseq graph config for the Second Brain vault.
+;; Most settings are also editable via Logseq's Settings UI —
+;; this file only pins the few that matter for how Claude Code writes pages.
+
+{:meta/version 1
+
+ :preferred-format "markdown"
+
+ ;; Journal file/page naming — matches log.md's YYYY-MM-DD convention.
+ :journal/file-name-format "yyyy_MM_dd"
+ :journal/page-title-format "MMM do, yyyy"
+ :feature/enable-journals? true
+
+ ;; Keep [[wikilinks]] visible with their brackets in the editor.
+ :ui/show-brackets? true
+
+ ;; New pages default to markdown, not org-mode.
+ :ui/default-new-block-format "markdown"}

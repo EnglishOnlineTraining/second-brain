@@ -1,0 +1,6 @@
+# Logseq internal caches — regenerated locally, not part of the graph content.
+logseq/bak/
+logseq/.recycle/
+logseq/version-files/
+logseq/graphs-txid.edn
+.DS_Store
