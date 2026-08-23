@@ -8,6 +8,7 @@ tags:: system
 		- [[wiki/concepts/fsrs]] — open-source ML-based spaced-repetition scheduler
 	- ### EdTech & AI
 		- [[wiki/concepts/graft]] — persistent-context tool for AI coding agents (tangential — dev tooling, not edtech; kept for its caching pattern)
+		- [[wiki/concepts/geo]] — AI search content optimization (tangential — marketing/SEO, not edtech; directly actionable for englishonline.training's own SEO)
 	- ### Pedagogy
 		-
 - ## People
@@ -31,3 +32,4 @@ tags:: system
 - ## Articles
 	- [[wiki/articles/2026-08-23-fsrs4anki-readme-summary]] — FSRS4Anki README, ingested 2026-08-23
 	- [[wiki/articles/2026-08-23-graft-readme-summary]] — Graft README, ingested 2026-08-23
+	- [[wiki/articles/2026-08-23-ai-search-content-optimization-summary]] — GEO/AI search content optimization, ingested 2026-08-23

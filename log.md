@@ -2,6 +2,14 @@
 
 > Reverse-chronological audit trail of all operations. Append new entries at the TOP.
 
+## 2026-08-23 08:00
+- **Operation:** ingest
+- **Source:** `raw/articles/2026-08-23-ai-search-content-optimization.md` (pasted directly by Shaun — appears to be a Microsoft Advertising blog post on GEO/AI search content optimization)
+- **Pages created:** [[wiki/concepts/geo]], [[wiki/articles/2026-08-23-ai-search-content-optimization-summary]]
+- **Pages updated:** [[wiki/index]]
+- **Evidence quality:** moderate for the one cited statistic (357% YoY AI-referral growth, TechCrunch/SimilarWeb, not independently re-verified); weak/anecdotal for the prescriptive formatting/structure advice (no citations backing individual recommendations, and the source is a vendor blog promoting its own webinar)
+- **Notes:** Outside the vault's two declared focus areas (not learning-science, not edtech) — flagged honestly rather than force-fit. Kept because it's directly, concretely actionable for englishonline.training's real SEO/schema.org infrastructure (see `vocab-games` CLAUDE.md §5g) — the source's checklist doubles as a ready-made audit list for that site. Cross-linked to [[wiki/concepts/graft]] (both are about chunking content for machine consumption, different AI consumers).
+
 ## 2026-08-23 07:00
 - **Operation:** manage (hands-on test, follow-up to the Graft ingest)
 - **Notes:** Installed Graft (`npm install -g @nanonets/graft`) and ran its free deterministic tier against `vocab-games`. Worked and was fast (1.3s, 217 nodes/420 edges, $0). Found a real, independently-discovered limitation not in the source material: it can't see the inline `<script>` logic inside `vocab-games`'s 220+ HTML pages, so its call-graph output (`graft callers checkDropdowns` → 1 caller found, actual ≈150+) would mislead anyone trusting it there. Reverted the incidental `.gitignore`/`graft/` changes left in `vocab-games` — not adopted as an ongoing tool for that repo. [[wiki/concepts/graft]] updated (`stub` → `draft`) with the hands-on findings.
