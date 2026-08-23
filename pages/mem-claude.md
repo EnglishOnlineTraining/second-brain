@@ -80,6 +80,10 @@ updated:: 2026-08-22
 		- **Project: Self-Organized Learning System** — ongoing personal practice
 			- Key questions: What is the optimal review cycle for different material types? How to design learning pathways that account for motivation decay? What role does community play in sustaining self-directed learning?
 			- Related: [[wiki/concepts/spaced-repetition]], [[wiki/concepts/metacognition]], `wiki/literature/`
+		- **Project: GEO for englishonline.training** — see [[mem/projects/geo-for-eot]]
+			- Status: Just started — one backlog item (site audit), not yet run
+			- Key questions: Is englishonline.training's existing schema.org/JSON-LD/title-H1-description structure actually aligned with GEO/AI-search best practice? What's the gap?
+			- Related: [[wiki/concepts/geo]]
 	- ### 6.2 Key Stakeholders / People to Track
 		- Researchers in learning science (Bjork, Karpicke, Roediger, Dunlosky)
 		- EdTech founders and product leaders

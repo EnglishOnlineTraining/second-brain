@@ -2,6 +2,10 @@
 
 > Reverse-chronological audit trail of all operations. Append new entries at the TOP.
 
+## 2026-08-23 09:00
+- **Operation:** manage
+- **Notes:** Promoted GEO from a one-off ingest to an active project — created [[mem/projects/geo-for-eot]] (applying [[wiki/concepts/geo]] to englishonline.training). Added its first backlog item: TODO audit `vocab-games` against the GEO checklist (title/H1/description alignment, snippability, schema.org/FAQPage coverage, anti-patterns) — not yet run. Added the project to [[mem/claude]] §6.1 Current Projects, and resolved [[wiki/concepts/geo]]'s open question about whether this was a real thread.
+
 ## 2026-08-23 08:00
 - **Operation:** ingest
 - **Source:** `raw/articles/2026-08-23-ai-search-content-optimization.md` (pasted directly by Shaun — appears to be a Microsoft Advertising blog post on GEO/AI search content optimization)

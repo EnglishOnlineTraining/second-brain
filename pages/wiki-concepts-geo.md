@@ -5,7 +5,7 @@ updated:: 2026-08-23
 status:: draft
 category:: other
 sources:: [[raw/articles/2026-08-23-ai-search-content-optimization]]
-related:: [[wiki/concepts/graft]]
+related:: [[wiki/concepts/graft]], [[mem/projects/geo-for-eot]]
 tags:: geo, seo, ai-search, content-strategy
 
 - ## Definition
@@ -21,9 +21,10 @@ tags:: geo, seo, ai-search, content-strategy
 - ## Connections
 	- [[wiki/concepts/graft]] — both concern structuring content into machine-parseable chunks, for different AI consumers
 	- [[mem/projects/ai-activities-website]] — content-generation-pipeline question could borrow "snippable, self-contained, typed chunk" thinking from GEO, not just from a code-parsing angle
+	- [[mem/projects/geo-for-eot]] — the project this concept now feeds: auditing englishonline.training against this checklist
 - ## Contradictions
 	- None found yet — single source. Note the source is a Microsoft Advertising blog post promoting a Microsoft Advertising webinar — a vendor/practitioner source with a commercial interest in this topic, not neutral research; treat prescriptive advice accordingly (see Evidence Quality on the article-summary page).
 - ## Open Questions
 	- The 357%/1.13B traffic-referral stat is attributed to TechCrunch/SimilarWeb but not independently re-verified from this ingest — worth ingesting the TechCrunch piece directly if this number matters for a real decision.
 	- Almost all the structural/formatting advice (em-dash caution, bullet overuse, etc.) is asserted without citation or study — reads as plausible practitioner best-practice, not established evidence. Worth flagging rather than treating as settled.
-	- Is this the start of a real "SEO/GEO for englishonline.training" thread in this vault, or a one-off ingest? No existing project page for it yet — [[mem/projects/ai-activities-website]] is the nearest fit but doesn't explicitly cover site SEO.
+	- Resolved 2026-08-23: yes, a real thread — [[mem/projects/geo-for-eot]] created, with the site audit as its first backlog item (not yet run).
