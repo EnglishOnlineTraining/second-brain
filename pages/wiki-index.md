@@ -19,7 +19,7 @@ tags:: system
 	- ### Founders / Builders
 		- [[wiki/people/damien-elmes]] — founder of Ankitects (Anki)
 - ## Topics
-	-
+	- [[wiki/topics/esl-grammar-topic-pool]] — triangulated ESL grammar topic rankings (search demand + error corpora + teaching attention); directly actionable for englishonline.training's topic selection
 - ## Literature
 	- ### Foundational
 		-
@@ -33,3 +33,4 @@ tags:: system
 	- [[wiki/articles/2026-08-23-fsrs4anki-readme-summary]] — FSRS4Anki README, ingested 2026-08-23
 	- [[wiki/articles/2026-08-23-graft-readme-summary]] — Graft README, ingested 2026-08-23
 	- [[wiki/articles/2026-08-23-ai-search-content-optimization-summary]] — GEO/AI search content optimization, ingested 2026-08-23
+	- [[wiki/articles/2026-08-23-esl-grammar-topic-pool-summary]] — ESL grammar topic pool, ingested 2026-08-23

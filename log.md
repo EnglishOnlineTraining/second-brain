@@ -2,6 +2,14 @@
 
 > Reverse-chronological audit trail of all operations. Append new entries at the TOP.
 
+## 2026-08-23 10:00
+- **Operation:** ingest
+- **Source:** `raw/notes/2026-08-23-esl-grammar-topic-pool.md` (uploaded directly by Shaun — compiled ESL grammar topic pool ranked by search demand, learner-error frequency, and teaching attention)
+- **Pages created:** [[wiki/topics/esl-grammar-topic-pool]], [[wiki/articles/2026-08-23-esl-grammar-topic-pool-summary]]
+- **Pages updated:** [[wiki/index]]
+- **Evidence quality:** moderate-to-strong — grounded in named academic learner corpora (NUCLE, Cambridge Learner Corpus, TOEFL11, ICLE, NICT JLE) and cited studies (Rozovskaya & Roth 2010, etc.) plus independent commercial keyword tools (SpyFu, Google Trends), not vendor self-reporting. Caveat: it's a secondary/compiled source — no individual figure independently re-verified in this ingest, and the source itself flags a US-market search-volume bias.
+- **Notes:** Genuinely, concretely actionable for `vocab-games`'s real topic-selection process (`topic-pool.json`, `add-topics`/`daily-exercise-draft` skills) and the `themen/` SEO landing pages — flagged as an opportunity in the topic page but NOT acted on (no changes made to `vocab-games`, no new project created) since Shaun didn't ask for that yet, unlike the GEO ingest where he explicitly asked to promote it to a project.
+
 ## 2026-08-23 09:00
 - **Operation:** manage
 - **Notes:** Promoted GEO from a one-off ingest to an active project — created [[mem/projects/geo-for-eot]] (applying [[wiki/concepts/geo]] to englishonline.training). Added its first backlog item: TODO audit `vocab-games` against the GEO checklist (title/H1/description alignment, snippability, schema.org/FAQPage coverage, anti-patterns) — not yet run. Added the project to [[mem/claude]] §6.1 Current Projects, and resolved [[wiki/concepts/geo]]'s open question about whether this was a real thread.
