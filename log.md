@@ -2,6 +2,10 @@
 
 > Reverse-chronological audit trail of all operations. Append new entries at the TOP.
 
+## 2026-08-23 07:00
+- **Operation:** manage (hands-on test, follow-up to the Graft ingest)
+- **Notes:** Installed Graft (`npm install -g @nanonets/graft`) and ran its free deterministic tier against `vocab-games`. Worked and was fast (1.3s, 217 nodes/420 edges, $0). Found a real, independently-discovered limitation not in the source material: it can't see the inline `<script>` logic inside `vocab-games`'s 220+ HTML pages, so its call-graph output (`graft callers checkDropdowns` → 1 caller found, actual ≈150+) would mislead anyone trusting it there. Reverted the incidental `.gitignore`/`graft/` changes left in `vocab-games` — not adopted as an ongoing tool for that repo. [[wiki/concepts/graft]] updated (`stub` → `draft`) with the hands-on findings.
+
 ## 2026-08-23 06:00
 - **Operation:** ingest
 - **Source:** `raw/articles/2026-08-23-graft-readme.md` (https://github.com/NanoNets/Graft)
