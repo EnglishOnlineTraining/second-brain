@@ -2,6 +2,14 @@
 
 > Reverse-chronological audit trail of all operations. Append new entries at the TOP.
 
+## 2026-10-21 10:00
+- **Operation:** write
+- **Source:** `~/Documents/GitHub/vocab-games` docs (`learning-design-checks.md`, `exercise-framework.md`, `INVENTORY.md`), read-only. No external literature.
+- **Pages created:** [[wiki/concepts/activity-taxonomy]]
+- **Pages updated:** [[mem/projects/ai-activities-website]] (TODO ticked, linked), [[wiki/index]]
+- **Evidence quality:** weak-to-moderate. Internal repo documentation, not research. The page is marked draft and says so.
+- **Notes:** Closes the "Create activity taxonomy concept page" next action. The "define taxonomy" blocker stays open until the axes are anchored in sourced learning-science literature.
+
 ## 2026-08-23 10:00
 - **Operation:** ingest
 - **Source:** `raw/notes/2026-08-23-esl-grammar-topic-pool.md` (uploaded directly by Shaun — compiled ESL grammar topic pool ranked by search demand, learner-error frequency, and teaching attention)
