@@ -2,6 +2,13 @@
 
 > Reverse-chronological audit trail of all operations. Append new entries at the TOP.
 
+## 2026-10-21 12:00
+- **Operation:** manage (project audit; no source ingested)
+- **Source:** read-only scan of `vocab-games` at `35941ee` (320 HTML files, 254 indexable) plus `docs/seo-backlog.md` Tiers 7, 8, 10, 11, 13
+- **Pages created:** [[mem/projects/geo-for-eot/audit-2026-10-21]]
+- **Pages updated:** [[mem/projects/geo-for-eot]] (status, blockers, TODO ticked, related)
+- **Notes:** Activities host passes 6 of 8 checklist items, 1 partial, 1 low-severity fail (decorative punctuation). FAQPage is on 31 pages, not 2 as the project page assumed. Speakable was removed after the 2026-08-24 deindexing; repo backlog still lists it as done. WordPress main site not re-audited. No edits to vocab-games or WordPress.
+
 ## 2026-08-23 10:00
 - **Operation:** ingest
 - **Source:** `raw/notes/2026-08-23-esl-grammar-topic-pool.md` (uploaded directly by Shaun — compiled ESL grammar topic pool ranked by search demand, learner-error frequency, and teaching attention)
