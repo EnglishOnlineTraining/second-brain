@@ -10,6 +10,7 @@ tags:: system
 		- [[wiki/concepts/graft]] — persistent-context tool for AI coding agents (tangential — dev tooling, not edtech; kept for its caching pattern)
 		- [[wiki/concepts/geo]] — AI search content optimization (tangential — marketing/SEO, not edtech; directly actionable for englishonline.training's own SEO)
 	- ### Pedagogy
+		- [[wiki/concepts/activity-taxonomy]] — draft taxonomy of activity types, inferred from the vocab-games exercise framework
 		-
 - ## People
 	- ### Researchers
