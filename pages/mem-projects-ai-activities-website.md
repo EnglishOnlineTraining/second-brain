@@ -19,11 +19,11 @@ updated:: 2026-11-01
 	- None yet.
 - ## Blockers
 	- Need more literature on adaptive learning systems.
-	- Need to define activity taxonomy before building generator — v2 draft in [[wiki/concepts/activity-taxonomy]], pending Shaun's review (3 open decisions at the end of that page); needs a sourced anchor.
+	- Need to define activity taxonomy before building generator — taxonomy decided 2026-11-01 in [[wiki/concepts/activity-taxonomy]] (vocab-games-derived; may be renamed once sourced literature is ingested).
 - ## Next Actions
 	- TODO Ingest 5 key papers on adaptive learning
-	- DOING Create activity taxonomy concept page — [[wiki/concepts/activity-taxonomy]] (v2 drafted 2026-11-01, pending review)
-	- TODO Design first activity template (quiz variant)
+	- DONE Create activity taxonomy concept page — [[wiki/concepts/activity-taxonomy]] (decided 2026-11-01)
+	- TODO Design first activity template (quiz variant) — unblocked: multiple choice in the `quizzes.json` shape, required `why` per option, 1 / ½ / ¼ attempt scoring
 - ## Related
 	- [[mem/goals/build-learning-science-kb]] — Foundation
 	- [[wiki/concepts/activity-taxonomy]] — Draft activity types from vocab-games

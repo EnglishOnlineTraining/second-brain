@@ -55,8 +55,8 @@ tags:: activities, taxonomy, exercise-types, vocab-games
 	- Which learning-science taxonomy should anchor the axes (retrieval practice, Bloom-style levels, something else)? Needs sourced literature, not extrapolation from the repo.
 	- The type list reflects only what the repo ships. Types the generator could add (cloze from a text, error correction, reordering) are not covered.
 	- Counts and labels come from `docs/INVENTORY.md` and may lag the live site. The exercise code was not audited for other types.
-- ## Decisions Needed
-	- These block the first template (the quiz variant) in [[mem/projects/ai-activities-website]].
-	- **1. Anchor the taxonomy to a learning-science model, or ship the vocab-games-derived one?** Anchoring (retrieval practice, Bloom-style levels) is better grounded but waits on the paper ingest. Shipping now lets the quiz template start, and the axes can be renamed later.
-	- **2. How does the generator handle attempt-weighted scoring?** Quiz-style items are single attempt (all-or-nothing). Gap-fill gives partial credit for later attempts. The quiz variant could use the simple scheme and leave attempt weighting for later, or inherit gap-fill's 1 / ½ / ¼ rule so scores stay comparable across both.
-	- **3. Which type does the quiz template cover first?** Options: multiple choice (the shape already in `quizzes.json`, simplest), or dropdown gap-fill (best specified, with a `why` per item, but more fields to generate). A suggested start is multiple choice with a required `why` per option.
+- ## Decided 2026-11-01
+	- These were open questions on the v2 draft; they unblock the first quiz template in [[mem/projects/ai-activities-website]].
+	- **1. Taxonomy source:** ship the vocab-games-derived taxonomy now, with the skill / interaction format / scoring axes. Rename later if the research suggests better terms.
+	- **2. Scoring:** quiz items use attempt-weighted scoring, the same as gap-fill (1 / ½ / ¼ / 0 by attempt number), so scores stay comparable across both.
+	- **3. First quiz template:** multiple choice in the `data/quizzes.json` shape (question, options, one answer), with a required `why` per option.
