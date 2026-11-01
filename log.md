@@ -2,6 +2,13 @@
 
 > Reverse-chronological audit trail of all operations. Append new entries at the TOP.
 
+## 2026-11-01 12:00
+- **Operation:** audit (manage)
+- **Source:** live curl of englishonline.training and activities.englishonline.training (20 pages); vocab-games `docs/seo-backlog.md` Tier 15 read-only. No site changes.
+- **Pages created:** [[mem/projects/geo-for-eot/audit-2026-11-01]]
+- **Pages updated:** [[mem/projects/geo-for-eot]] (DONE line added, status)
+- **Notes:** Five of six 2026-10-21 gaps fixed. Eight new gaps; main-site 403 to crawler user agents unchanged.
+
 ## 2026-10-21 10:00
 - **Operation:** write
 - **Source:** `~/Documents/GitHub/vocab-games` docs (`learning-design-checks.md`, `exercise-framework.md`, `INVENTORY.md`), read-only. No external literature.
