@@ -19,9 +19,8 @@ tags:: claude-code, seo, memory, hooks
 - ## Concepts Introduced
 	- [[wiki/concepts/claude-code-memory-layers]] — the four layers, limits, hooks, audit
 - ## Evidence Quality
-	- **Anecdotal-to-weak.** One company's own setup, self-reported numbers, and the article carries ads for the author's product (dropped from the raw copy). The mechanics it describes (load order, hooks) quote Anthropic's docs and are plausible, but were not re-verified here. The author states the caveat: what generalises is the placement rule, not the exact files.
+	- **Anecdotal-to-weak.** One company's own setup, self-reported numbers, and the article carries ads for the author's product (dropped from the raw copy). The mechanics it describes (load order, hooks) quote Anthropic's docs and are plausible, but were checked against the Claude Code docs on 2026-11-02: all core claims hold, see Verification on [[wiki/concepts/claude-code-memory-layers]]. The author's own numbers and the sales framing remain unchecked. The author states the caveat: what generalises is the placement rule, not the exact files.
 - ## My Take
 	- *RESERVED FOR HUMAN CURATOR.*
 - ## Follow-Up Questions
-	- Do the 200-line / 25KB limits match the current Claude Code docs? Worth a docs check before relying on them.
-	- Is the `vocab-games` auto-memory index near the limit? See the LATER items in [[mem/projects/geo-for-eot]].
+		- Is the `vocab-games` auto-memory index near the limit? See the LATER items in [[mem/projects/geo-for-eot]].

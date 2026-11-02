@@ -30,6 +30,11 @@ tags:: claude-code, memory, seo, hooks
 	- [[mem/projects/geo-for-eot]] — project that carries the LATER audit items
 - ## Contradictions
 	- None found yet, single source. The "CLAUDE.md is not enforced" claim agrees with the Anthropic docs the source quotes, but the docs were not re-read in this ingest.
+- ## Verification (2026-11-02, against code.claude.com/docs/en/memory and /hooks)
+	- **Confirmed:** CLAUDE.md under 200 lines; CLAUDE.md delivered as a user message, "no guarantee of strict compliance"; memory is "context, not enforced configuration", use a `PreToolUse` hook to block; auto-memory index loads first 200 lines or 25KB; `paths:` rules; HTML block comments stripped; backticks stop an `@import`; `CLAUDE.local.md`; conflicting instructions "may pick one arbitrarily"; root CLAUDE.md re-read after `/compact`; `/context` lists Memory files; hook exit 2 blocks the call.
+	- **Confirmed by third-party posts only:** `/doctor prompt-audit` (added in 2.1.283, 2026-09-25; the docs now describe `/doctor` auditing CLAUDE.md, rules, skills).
+	- **Not confirmed / softened:** the "warning line appended to the loaded index" detail. The docs say Claude Code reminds Claude to shorten the file when it is near a limit after a write; the silent cut itself is consistent with "content beyond that threshold is not loaded".
+	- **Caveats the source omits:** a hook that crashes, times out or exits with anything but 2 does not block (unless `onFailure: block`, v2.1.295+). An `Edit|Write` matcher does not see changes made through Bash (`sed -i`, redirects), so the `robots.txt` example needs a Bash rule too, and the docs prefer permission rules for hard denies.
+	- **Checked in vocab-games (read-only, 2026-11-02):** auto-memory `MEMORY.md` is 14 lines / 1.8KB (far under the limit). Root `CLAUDE.md` is 219 lines / 14KB (over the 200-line target). No hooks found in the project `.claude/settings*.json`. Details feed the two LATER items in [[mem/projects/geo-for-eot]].
 - ## Open Questions
-	- Claims to verify against current Claude Code docs before acting: the 200 lines / 25KB auto-memory limit, `paths:` frontmatter for rules, and `/doctor` prompt-audit "v2.1.283+". The source quotes the docs but is a practitioner post.
-	- The source's numbers (128 lines, 17 skills, 171 memory files, 213-line index) are one company's own report, not independently checked.
+	- The author's own figures (128 lines, 17 skills, 171 files, 213-line index) remain self-reported and unchecked.
