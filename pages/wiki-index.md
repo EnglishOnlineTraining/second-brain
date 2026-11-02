@@ -11,7 +11,7 @@ tags:: system
 		- [[wiki/concepts/geo]] — AI search content optimization (tangential — marketing/SEO, not edtech; directly actionable for englishonline.training's own SEO)
 	- ### Pedagogy
 		- [[wiki/concepts/activity-taxonomy]] — draft taxonomy of activity types, inferred from the vocab-games exercise framework
-		-
+		- [[wiki/concepts/claude-code-memory-layers]] — four Claude Code memory layers, auto-memory 200-line/25KB limit, hooks for real "nevers" (draft, from an SEO article)
 - ## People
 	- ### Researchers
 		-
@@ -35,3 +35,4 @@ tags:: system
 	- [[wiki/articles/2026-08-23-graft-readme-summary]] — Graft README, ingested 2026-08-23
 	- [[wiki/articles/2026-08-23-ai-search-content-optimization-summary]] — GEO/AI search content optimization, ingested 2026-08-23
 	- [[wiki/articles/2026-08-23-esl-grammar-topic-pool-summary]] — ESL grammar topic pool, ingested 2026-08-23
+	- [[wiki/articles/2026-11-02-claude-seo-second-brain-summary]] — Claude SEO second brain (four memory layers), ingested 2026-11-02

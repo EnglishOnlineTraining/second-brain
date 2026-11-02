@@ -1,7 +1,7 @@
 title:: wiki/concepts/graft
 type:: concept
 created:: 2026-08-23
-updated:: 2026-08-23
+updated:: 2026-11-02
 status:: draft
 category:: ai
 sources:: [[raw/articles/2026-08-23-graft-readme]]
