@@ -1,0 +1,71 @@
+title:: mem/projects/geo-for-eot/audit-2026-11-01
+type:: project
+status:: done
+tags:: geo, seo, ai-search, englishonline-training, audit
+created:: 2026-11-01
+updated:: 2026-11-01
+
+- ## Scope and method
+	- Live re-check with `curl` on 2026-11-01 of **both hosts**, against the checklist in [[wiki/concepts/geo]] and the earlier audit [[mem/projects/geo-for-eot/audit-2026-10-21]]. That audit covered the activities host from the repo; this one fetches the public pages, so it also covers the WordPress main site for the first time. Read-only: nothing in WordPress or `vocab-games` was changed.
+	- Sample: **20 pages**. Main site: `/`, `/activities/`, `/english-for-students/`, `/business-english/`, `/faq/`, `/about/`, `/fuer-eltern/`, `/common-questions-about-learning-english/`. Activities host: `/`, `/esl-grammar-activities.html`, the four new ESL pages (`esl-question-formation`, `esl-present-simple-continuous`, `esl-countable-uncountable`, `esl-pronouns`), `/themen/`, `/themen/passiv.html`, `/themen/artikel.html`, `business-activities`, `abitur-activities`, `ielts-activities`. Then all 18 `themen/` pages for openers, FAQ markup and exercise counts, and `msa-`, `it-`, `uni-`, `7g-activities` for FAQPage only.
+	- Each check is marked **PASS**, **FAIL**, **PARTIAL**, and **CHANGED** (different from 2026-10-21, with direction). Pages were parsed by script (title, meta description, H1, JSON-LD, images, symbols); first-paragraph word counts are from the first `<p>` after the H1.
+	- Not measured: rendered (JS) content, Core Web Vitals, Search Console. The vocab-games `docs/seo-backlog.md` Tier 15 close-outs (2026-10-23 and 2026-10-30) were read to tell what changed.
+- ## 1. Title, H1 and description alignment
+	- **PASS, sampled pages, no duplicates; descriptions 123 to 159 characters (limit 160). CHANGED: better.** On 2026-10-21, 16 activities pages ran over 160; now the build fails on any indexable page over 160 (Tier 15.1, `scripts/check-meta-descriptions.js`). All 20 sampled pages are within limit. Longest: `esl-grammar-activities.html` 159, `/` on the main site 157.
+	- **PASS, 0 emoji-prefixed H1s in the sample. CHANGED: better.** Was 27 pages; fixed by vocab-games PR #215.
+	- **PASS, the four new ESL pages.** Title, H1 and description say the same thing, e.g. `https://activities.englishonline.training/esl-countable-uncountable.html`: title "Countable and Uncountable Nouns — much, many, few, little", H1 "Countable & Uncountable Nouns — much, many, few, little", description names the same skills. Same for `esl-pronouns.html`, `esl-question-formation.html`, `esl-present-simple-continuous.html` (title "Present Simple vs Present Continuous — habits and now", H1 "Present Simple vs. Present Continuous").
+	- **PARTIAL: main homepage `https://englishonline.training/`.** Title "EnglishOnline.training: English for Schools and Teams"; H1 "Free English practice for German schools."; description covers both audiences. The title promises teams, the H1 only schools. Not previously audited. See gap 3.
+	- **PASS: every other sampled page** (`/faq/`, `/about/`, `/business-english/`, `/activities/`, `/fuer-eltern/`, hubs, `themen/`).
+- ## 2. Snippable answer boxes
+	- **PASS, `/faq/` and `/business-english/`.** `/faq/` opens with a direct answer ("Yes. Every exercise on activities.englishonline.training is free and needs no account…", 24 words). `/business-english/` opens "English Online Training is a Berlin-based Business English service that designs and delivers custom English programmes for companies…" (27 words, names the entity, location and service). FAQ answers: median 18 and 24 words, max 43.
+	- **PASS, `themen/` openers. CHANGED: better.** Was 14 H2-openers over 45 words (7 over 60); now **0 over 45** on all 18 pages (PR "themen: split 14 openers over 45 words", 2026-10-30). Checked: 18 pages, 210 openers.
+	- **PASS, Quick Overview ("At a glance") on the four new ESL pages.** All four carry the `qo-box`. Unchanged for exercise pages. Hubs, `themen/` and standalone tools have none by design (Tier 15.2).
+	- **PARTIAL, the four ESL pages: the box leads with a learning objective, not an answer.** First line of `esl-pronouns.html`: "By the end of this exercise, you can choose the correct pronoun…". An AI answer engine asked "present simple or continuous?" finds the objective, not the rule. See gap 2.
+	- **PARTIAL, hubs.** First paragraph on `business-activities.html` is 5 words ("Company tasks & professional skills"); `abitur-activities.html` 7 words. Hubs are excluded from the box by design (Tier 15.2), but these two have no answer-style opener at all. `ielts-activities.html` (47 words), `esl-grammar-activities.html` (32) and the activities homepage (14) are fine.
+	- **PARTIAL: `https://englishonline.training/english-for-students/`.** Opens with three rhetorical questions ("Is your child struggling to keep up in English class?…") instead of an answer sentence. Same pattern on `/fuer-eltern/` is fine (names audience, offer and price, 38 words). See gap 5.
+	- **FAIL: `themen/artikel.html` and `themen/praepositionen.html`: the lede says "0 kostenlose Übungen".** E.g. `https://activities.englishonline.training/themen/artikel.html`: "Erklärung, Beispiele und 0 kostenlose Übungen zum Thema Artikel…" while the meta description of the same page says 24. See gap 1.
+- ## 3. FAQPage and other schema
+	- **PASS, main site.** `FAQPage` on `/faq/` (9 Q&A), `/about/` (7) and `/business-english/` (7); each has a visible FAQ section. `BreadcrumbList` on every sampled page. Homepage has `Organization`+`LocalBusiness` (`@id …/#organization`), `WebSite`+`SearchAction`, `ImageObject` logo. `/about/` has `Person` and `EducationalOccupationalCredential`.
+	- **PASS and CHANGED: LinkedIn `sameAs` is live on the Organization node** (the homepage lists LinkedIn and Facebook). Done in the 2026-10-26 to 2026-10-30 work (Tier 16). On 2026-10-21 this was open. The URL has a tracking parameter, see gap 4.
+	- **PASS and CHANGED: `speakable` is gone from `/about/`** (checked on all 20 pages: 0 `speakable` nodes; Tier 15.5 and the page 2224 edit of 2026-10-23). Do not re-add.
+	- **PASS, activities host: `FAQPage` on all 18 `themen/` pages**, `LearningResource` on the four ESL pages, `CollectionPage`, `BreadcrumbList`, `Person`+`EducationalOrganization` throughout. Hub `FAQPage` on `business-`, `ielts-`, `msa-` and `it-activities`. Unchanged.
+	- **FAIL (new finding): no `FAQPage` on `abitur-activities.html`, `uni-activities.html` or any of the four new ESL pages.** The 2026-10-21 audit's wording ("the Abitur … hubs") over-stated this: `abitur-activities.html` had no FAQPage then and has none now (`msa-activities.html` does). See gap 6.
+	- **FAIL, small: `https://englishonline.training/` has no `FAQPage` and the `/activities/`, `/english-for-students/`, `/fuer-eltern/` pages carry only `BreadcrumbList`.** Fine for the activities listing; the two parent-facing pages answer repeated questions. Folded into gap 5.
+- ## 4. Anti-patterns
+	- **4a. Content hidden in tabs or accordions: PASS.** 0 `role="tab"` and 0 `<details>` on all 20 pages, including the FAQ pages (visible headings, not accordions). Unchanged.
+	- **4b. Key info only in a PDF or an image: PASS with one alt fix.** PDF links on `/english-for-students/` and `/fuer-eltern/` only (landing text around them). Images without usable `alt` on the main site: the lightbox helper `<img alt="">` tags on `/english-for-students/` and `/business-english/` are decorative (fine). One real content image on `/common-questions-about-learning-english/` (a student writing an email) has `alt=""`. See gap 7. Activities host: 0 `<img>` on all 12 sampled pages.
+	- **4c. Decorative punctuation: PARTIAL.** Star glyphs: 0 on `business-activities.html` (CHANGED: fixed by the 2026-10-30 star-glyph PR), but **1 on `/english-for-students/`** (new, main site). Emoji H1s: 0. Em dashes remain by design (Tier 15.4): 52 to 64 in the body of each new ESL page and `themen/passiv.html` 61, and the em dash sits inside the H1 of 3 of the 4 ESL pages and of both `themen/` pages sampled. Unchanged and low value; not a gap, just recorded.
+	- **4d. Unanchored buzzwords: PASS.** Searched all 20 pages for "innovative", "cutting-edge", "revolutionary", "game-chang", "state-of-the-art", "world-class", "seamless", "unlock": 0 marketing hits.
+- ## 5. Crawler access (not on the original checklist, but it decides whether the rest matters)
+	- **FAIL, unchanged since 2026-10-21: the main site returns HTTP 403 to crawler user agents.** `https://englishonline.training/`, `/llms.txt` and `/faq/` return 403 for `GPTBot`, `ClaudeBot`, `Claude-User`, `ChatGPT-User`, `OAI-SearchBot`, `PerplexityBot`, a Googlebot UA and a bingbot UA, and 429 for `Google-Extended`, `CCBot` and `Bytespider`. A plain curl or browser UA gets 200. The activities host returns 200 to all of them. `robots.txt` on the main site itself is clean (only `/wp-admin/` disallowed). This is a WordPress.com edge rule and the backlog's Tier 8 A1 already records it with "Shaun to check Search Console". A UA-only curl test can't prove real Googlebot (which comes from Google IPs) is blocked, but AI agents that fetch by UA will be. No change since 10-21. Everything on the main site above can't be cited by an answer engine that gets a 403. See gap 8.
+	- **PASS: `robots.txt`, `sitemap.xml` and `llms.txt`.** Main-site `llms.txt` is current (links to the Abitur/MSA guides, the activities `llms.txt`); activities `llms.txt` is current and lists the ESL grammar hub; sitemap on the activities host lists all four new ESL pages with `lastmod` 2026-10-28 to 2026-10-30.
+- ## Summary table
+	- | Check | 2026-10-21 | 2026-11-01 |
+	- | Title/H1/description aligned | PASS | PASS (homepage PARTIAL) |
+	- | Meta descriptions ≤ 160 | FAIL (16) | PASS, CHANGED |
+	- | Emoji H1s | FAIL (27) | PASS, CHANGED |
+	- | `themen/` openers ≤ 45 words | PARTIAL (14 over) | PASS, CHANGED |
+	- | Quick Overview / answer box | PASS | PASS for exercises; PARTIAL on ESL objective-led, hubs |
+	- | FAQPage | PASS (31 pages) | PASS; confirmed missing on Abitur hub and new ESL pages |
+	- | Speakable | stale lines | PASS, CHANGED (removed) |
+	- | LinkedIn `sameAs` | open | PASS, CHANGED (with a tracking param) |
+	- | Hidden content | PASS | PASS |
+	- | PDF/image-only info | PASS | PASS (one empty `alt`) |
+	- | Decorative symbols | FAIL (low) | PARTIAL: stars fixed on activities, 1 on main site |
+	- | Buzzwords | PASS | PASS |
+	- | Crawler access, main site | open (403) | FAIL, unchanged |
+- ## New gaps (not already open in the vocab-games backlog)
+	- 1. **`themen/` ledes show the wrong exercise count.** `artikel.html` and `praepositionen.html` say "0 kostenlose Übungen" while the same page's description says 24; 8 more pages disagree (lede vs description, e.g. `passiv.html` 17 vs 30, `gerund-infinitiv.html` 9 vs 30). The lede uses `exercisesForTopic(slug).length` in `scripts/build-topic-pages.js:299`. Fix: make the lede and description use one count, and fail the build if either is 0.
+	- 2. **The four ESL pages' overview lede is a learning objective, not an answer.** Fix: add a one-sentence rule answer above "By the end of this exercise…" in the Quick Overview, per page (e.g. "Use the present simple for habits and facts, the present continuous for actions happening now").
+	- 3. **Main homepage title promises "Teams" the H1 doesn't, and the entity names disagree.** `Organization` is "English Online Training", `WebSite` is "Improve your English skills", the title brand is "EnglishOnline.training", and the Organization `description` ("Prepare for tests. Improve your grades. Pass exams") differs from the meta description. Fix: set `WebSite.name` and Organization `description` to match the homepage meta; add "and teams" to the H1 subline or drop it from the title. Check against Tier 8 A2 (Organization contradiction) before editing.
+	- 4. **LinkedIn `sameAs` carries `?isSelfProfile=true`.** Fix: change the URL to `https://www.linkedin.com/in/shaunptrezise/`.
+	- 5. **`/english-for-students/` opens with three questions and has one star glyph; neither it nor `/fuer-eltern/` has an FAQ block.** Fix: replace the opening with a one-sentence answer (who, what, how much), remove the star, and add a 4 to 5 question FAQ with `FAQPage` markup.
+	- 6. **No `FAQPage` on `abitur-activities.html`, `uni-activities.html` or the four ESL pages.** (`msa-`, `business-`, `ielts-` and `it-activities` already have one.) Fix: add a 4 to 5 question FAQ block plus markup to the Abitur hub and `esl-grammar-activities.html`; per-exercise FAQs on the ESL pages are optional.
+	- 7. **Empty `alt` on the content image of `/common-questions-about-learning-english/`.** It shows a student writing an email. Fix: write a plain alt; also consider a lead-in sentence that answers the page title, since the page is a 1,800-word essay with no FAQ markup.
+	- 8. **Main-site 403 for crawler UAs is still open after 11 days.** Fix: Shaun checks Search Console URL Inspection (Live test) on `/`, then asks WordPress.com to allow GPTBot, ClaudeBot, OAI-SearchBot, PerplexityBot (needs Shaun, WordPress.com dashboard or support).
+- ## Verdict
+	- The copy and schema gaps from 2026-10-21 are fixed (meta length, emoji H1s, `themen/` openers, Speakable, LinkedIn sameAs). The four new ESL pages are structurally sound (aligned metadata, Quick Overview, `LearningResource`) but lead with objectives and lack FAQs. The new defects are small, except one: the wrong exercise count on two `themen/` ledes. The biggest open GEO risk is unchanged and sits outside the content: the main site refuses crawler user agents.
+- ## Related
+	- [[mem/projects/geo-for-eot]]
+	- [[mem/projects/geo-for-eot/audit-2026-10-21]]
+	- [[wiki/concepts/geo]]
