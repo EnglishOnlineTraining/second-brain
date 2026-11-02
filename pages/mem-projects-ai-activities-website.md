@@ -3,7 +3,7 @@ type:: project
 status:: active
 tags:: edtech, ai, activities
 created:: 2026-08-22
-updated:: 2026-10-21
+updated:: 2026-11-01
 
 - ## Brief
 	- Design and build a website that uses AI to generate, personalize, and optimize learning activities. Activities should adapt to learner progress, preferences, and knowledge state in real-time.
@@ -19,11 +19,11 @@ updated:: 2026-10-21
 	- None yet.
 - ## Blockers
 	- Need more literature on adaptive learning systems.
-	- Need to define activity taxonomy before building generator — first draft in [[wiki/concepts/activity-taxonomy]], needs a sourced anchor.
+	- Need to define activity taxonomy before building generator — taxonomy decided 2026-11-01 in [[wiki/concepts/activity-taxonomy]] (vocab-games-derived; may be renamed once sourced literature is ingested).
 - ## Next Actions
 	- TODO Ingest 5 key papers on adaptive learning
-	- DONE Create activity taxonomy concept page — [[wiki/concepts/activity-taxonomy]] (draft, 2026-10-21)
-	- TODO Design first activity template (quiz variant)
+	- DONE Create activity taxonomy concept page — [[wiki/concepts/activity-taxonomy]] (decided 2026-11-01)
+	- TODO Design first activity template (quiz variant) — unblocked: multiple choice in the `quizzes.json` shape, required `why` per option, 1 / ½ / ¼ attempt scoring
 - ## Related
 	- [[mem/goals/build-learning-science-kb]] — Foundation
 	- [[wiki/concepts/activity-taxonomy]] — Draft activity types from vocab-games
