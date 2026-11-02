@@ -26,6 +26,7 @@ tags:: ai, developer-tools, context-management
 - ## Connections
 	- [[mem/projects/ai-activities-website]] — the caching/incremental-rebuild pattern is a candidate reference for the activity-generation-at-scale question
 	- [[wiki/concepts/context-management]] — broader concept this is one instance of (page not yet created)
+	- [[wiki/concepts/claude-code-memory-layers]] — Claude Code's own memory layers (CLAUDE.md, rules, skills, auto memory); same re-onboarding problem
 - ## Contradictions
 	- None found yet — only one source (the project's own README) ingested. All benchmark figures below are self-reported by the source, not independently verified.
 - ## Open Questions
