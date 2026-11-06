@@ -1,11 +1,11 @@
 title:: wiki/concepts/geo
 type:: concept
 created:: 2026-08-23
-updated:: 2026-08-23
+updated:: 2026-11-02
 status:: draft
 category:: other
 sources:: [[raw/articles/2026-08-23-ai-search-content-optimization]]
-related:: [[wiki/concepts/graft]], [[mem/projects/geo-for-eot]]
+related:: [[wiki/concepts/graft]], [[mem/projects/geo-for-eot]], [[wiki/concepts/claude-code-memory-layers]]
 tags:: geo, seo, ai-search, content-strategy
 
 - ## Definition
@@ -22,6 +22,7 @@ tags:: geo, seo, ai-search, content-strategy
 	- [[wiki/concepts/graft]] — both concern structuring content into machine-parseable chunks, for different AI consumers
 	- [[mem/projects/ai-activities-website]] — content-generation-pipeline question could borrow "snippable, self-contained, typed chunk" thinking from GEO, not just from a code-parsing angle
 	- [[mem/projects/geo-for-eot]] — the project this concept now feeds: auditing englishonline.training against this checklist
+	- [[wiki/concepts/claude-code-memory-layers]] — operator-side counterpart: how Claude Code is set up to do SEO work on a site
 - ## Contradictions
 	- None found yet — single source. Note the source is a Microsoft Advertising blog post promoting a Microsoft Advertising webinar — a vendor/practitioner source with a commercial interest in this topic, not neutral research; treat prescriptive advice accordingly (see Evidence Quality on the article-summary page).
 - ## Open Questions
