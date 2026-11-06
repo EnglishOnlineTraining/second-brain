@@ -3,7 +3,7 @@ type:: project
 status:: active
 tags:: geo, seo, ai-search, englishonline-training
 created:: 2026-08-23
-updated:: 2026-11-01
+updated:: 2026-11-02
 
 - ## Brief
 	- Apply GEO/AI-search content-optimization practice (see [[wiki/concepts/geo]]) to englishonline.training / the `vocab-games` repo — check the real site against the structural/formatting checklist from that ingest, and fix what's worth fixing.
@@ -22,8 +22,11 @@ updated:: 2026-11-01
 - ## Next Actions
 	- DONE Audit `vocab-games`/englishonline.training against the [[wiki/concepts/geo]] checklist (title/H1/description alignment, snippability of Quick Overview boxes and `themen/` prose, schema.org/FAQPage coverage, anti-pattern check) — added 2026-08-23, done 2026-10-21 for the activities host: [[mem/projects/geo-for-eot/audit-2026-10-21]]
 	- DONE Re-check englishonline.training and the activities host live with curl against the checklist (20 pages): [[mem/projects/geo-for-eot/audit-2026-11-01]] — done 2026-11-01. Five of the six earlier gaps are fixed; eight new small gaps, plus the main-site 403 to crawler user agents still open.
-	- DONE Shaun to triage the audit's six gaps (long meta descriptions, emoji H1s vs VOICE.md, long `themen/` openers, symbols, stale Speakable lines, 4 pages without overview box) — closed by Shaun 2026-11-06: the 2026-11-01 re-check found five of the six fixed.
+	- TODO Shaun to triage the audit's six gaps (long meta descriptions, emoji H1s vs VOICE.md, long `themen/` openers, symbols, stale Speakable lines, 4 pages without overview box).
+	- LATER Check the size of the `vocab-games` auto-memory index against the 200-line / 25KB load limit, and the line count of CLAUDE.md (target under 200). Check only, no change. Read-only check 2026-11-02: MEMORY.md is 14 lines, fine; CLAUDE.md is 219 lines, over the 200 target. From [[wiki/articles/2026-11-02-claude-seo-second-brain-summary]], added 2026-11-02.
+	- LATER Check whether the live-page "nevers" (no live WordPress edits without a go-ahead, no money-page URL changes) are only prose in CLAUDE.md or backed by a `PreToolUse` hook. Check only, no change. Read-only check 2026-11-02: no hooks in the project settings. Mind that an Edit|Write hook misses Bash writes. See [[wiki/concepts/claude-code-memory-layers]], added 2026-11-02.
 - ## Related
+	- [[wiki/concepts/claude-code-memory-layers]] — how the repo's CLAUDE.md, skills and auto memory should be layered (operator side)
 	- [[mem/projects/geo-for-eot/audit-2026-11-01]] — live re-check of both hosts, 20 pages
 	- [[mem/projects/geo-for-eot/audit-2026-10-21]] — the audit result, pass/fail per checklist item
 	- [[wiki/concepts/geo]] — the source concept/checklist this project applies

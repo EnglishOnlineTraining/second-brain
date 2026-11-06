@@ -2,11 +2,13 @@
 
 > Reverse-chronological audit trail of all operations. Append new entries at the TOP.
 
-## 2026-11-06 18:20
-- **Operation:** correction (manage)
-- **Source:** Shaun's report of LLM citations; live curl of englishonline.training on 2026-11-06. No site changes.
-- **Pages updated:** [[mem/projects/geo-for-eot/audit-2026-11-01]] (section 5, summary table, gap 8, verdict)
-- **Notes:** The main-site 403 to crawler user agents was a false alarm: a fake Googlebot gets the same challenge page, so the test says nothing about real crawlers. Gap 8 withdrawn.
+## 2026-11-02 12:00
+- **Operation:** ingest
+- **Source:** `raw/articles/2026-11-02-claude-seo-second-brain-complete-guide.md` (X article by Nicholas Dulait, pasted by Shaun; condensed copy, ad lines dropped)
+- **Pages created:** [[wiki/concepts/claude-code-memory-layers]], [[wiki/articles/2026-11-02-claude-seo-second-brain-summary]]
+- **Pages updated:** [[mem/projects/geo-for-eot]] (two LATER check items), [[wiki/concepts/geo]], [[wiki/concepts/graft]] (backlinks), [[wiki/index]]
+- **Evidence quality:** weak (anecdotal). One company's self-reported setup; docs claims (200 lines/25KB, `paths:` rules) not re-verified.
+- **Notes:** No changes to vocab-games; audit points recorded as LATER checks only. No person page for the author. Source has no URL (pasted).
 
 ## 2026-11-01 12:00
 - **Operation:** audit (manage)
