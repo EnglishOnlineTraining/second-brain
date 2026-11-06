@@ -22,7 +22,7 @@ updated:: 2026-11-01
 - ## Next Actions
 	- DONE Audit `vocab-games`/englishonline.training against the [[wiki/concepts/geo]] checklist (title/H1/description alignment, snippability of Quick Overview boxes and `themen/` prose, schema.org/FAQPage coverage, anti-pattern check) — added 2026-08-23, done 2026-10-21 for the activities host: [[mem/projects/geo-for-eot/audit-2026-10-21]]
 	- DONE Re-check englishonline.training and the activities host live with curl against the checklist (20 pages): [[mem/projects/geo-for-eot/audit-2026-11-01]] — done 2026-11-01. Five of the six earlier gaps are fixed; eight new small gaps, plus the main-site 403 to crawler user agents still open.
-	- TODO Shaun to triage the audit's six gaps (long meta descriptions, emoji H1s vs VOICE.md, long `themen/` openers, symbols, stale Speakable lines, 4 pages without overview box).
+	- DONE Shaun to triage the audit's six gaps (long meta descriptions, emoji H1s vs VOICE.md, long `themen/` openers, symbols, stale Speakable lines, 4 pages without overview box) — closed by Shaun 2026-11-06: the 2026-11-01 re-check found five of the six fixed.
 - ## Related
 	- [[mem/projects/geo-for-eot/audit-2026-11-01]] — live re-check of both hosts, 20 pages
 	- [[mem/projects/geo-for-eot/audit-2026-10-21]] — the audit result, pass/fail per checklist item
