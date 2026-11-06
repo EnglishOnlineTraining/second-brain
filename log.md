@@ -2,6 +2,12 @@
 
 > Reverse-chronological audit trail of all operations. Append new entries at the TOP.
 
+## 2026-11-06 18:20
+- **Operation:** correction (manage)
+- **Source:** Shaun's report of LLM citations; live curl of englishonline.training on 2026-11-06. No site changes.
+- **Pages updated:** [[mem/projects/geo-for-eot/audit-2026-11-01]] (section 5, summary table, gap 8, verdict)
+- **Notes:** The main-site 403 to crawler user agents was a false alarm: a fake Googlebot gets the same challenge page, so the test says nothing about real crawlers. Gap 8 withdrawn.
+
 ## 2026-11-01 12:00
 - **Operation:** audit (manage)
 - **Source:** live curl of englishonline.training and activities.englishonline.training (20 pages); vocab-games `docs/seo-backlog.md` Tier 15 read-only. No site changes.
