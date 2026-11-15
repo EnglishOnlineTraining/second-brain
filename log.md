@@ -10,6 +10,11 @@
 - **Evidence quality:** weak (anecdotal). One company's self-reported setup; docs claims (200 lines/25KB, `paths:` rules) not re-verified.
 - **Notes:** No changes to vocab-games; audit points recorded as LATER checks only. No person page for the author. Source has no URL (pasted).
 
+## 2026-11-15 16:00
+- **Operation:** update (manage)
+- **Source:** vocab-games coordinator run; dashboard rows sb-journal-gap and sb-todo-esl-grammar-pool.
+- **Notes:** Correction to 2026-11-01 below: the main-site 403 to crawler user agents was closed as a false alarm on 2026-11-06. The 2026-08-23 ESL grammar topic pool has since been acted on in vocab-games (`esl-grammar-pool.json` and the `esl-grammar-exercise-draft` skill).
+
 ## 2026-11-01 12:00
 - **Operation:** audit (manage)
 - **Source:** live curl of englishonline.training and activities.englishonline.training (20 pages); vocab-games `docs/seo-backlog.md` Tier 15 read-only. No site changes.
